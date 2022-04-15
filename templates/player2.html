@@ -2,9 +2,9 @@
 {% block content %}
 
     <h1>Game</h1>
-    <h2>Player 1</h2>
+    <h2>Player 2</h2>
 
-    <form action="/player2" method="post">
+    <form action="/game" method="post">
         <label for="name">Name</label><br>
         <input type="text" name="name" id="name">
         <legend>Select Your Choice: </legend>
@@ -16,5 +16,6 @@
         <label for="player">Scissors</label><br/>
         <input type="submit" value="Add choice">
     </form>
-    
+
+
 {% endblock %}

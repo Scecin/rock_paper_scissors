@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>The decisions are:</h2>
+    {% for player in players %}
+    <div>
+        <p>
+        {{ player.name }} has chosen {{ player.choice }}
+        {% if player.choice == "rock" %}
+            <span>&#129704;</span>
+        {% endif %}
+        {% if player.choice == "scissors" %}
+            <span>&#9988;</span>
+         {% endif %}
+         {% if player.choice == "paper" %}
+            <span>&#128196;</span>
+        {% endif %}
+        </p>
+    </div>
+    {% endfor %}
+    <h2>So, The winner is: </h2>
+    {% for player in players %}
+    {% if player.choice == "rock" and player.choice == "paper" %}
+    <P>Paper wins</P>
+    {% endif %}
+    <!-- <div>
+        <p>
+          {{ player. name }} is the winner!
+        </p>
+    </div> -->
+    {% endfor %}
+{% endblock %}
