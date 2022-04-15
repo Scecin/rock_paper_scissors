@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Game</h1>
+<h2>Player 1</h2>
+
+<form action="/addchoice" methods="POST">
+    <legend>Select Your Choice: </legend>
+    <input type="radio" name="choice" id="rock" value="rock" />
+    <label for="player">Rock</label><br />
+    <input type="radio" name="choice" id="paper" value="paper"  />
+    <label for="player">Paper</label><br/>
+    <input type="radio" name="choice" id="scissors" value="scissors"  />
+    <label for="player">Scissors</label><br/>
+    <input type="submit" value="Add choice">
+</form>
+
+<h2>Player 2</h2>
+
+<form action="/addchoice" methods="POST">
+    <legend>Select Your Choice: </legend>
+    <input type="radio" name="choice" id="rock" value="rock" />
+    <label for="player">Rock</label><br />
+    <input type="radio" name="choice" id="paper" value="paper"  />
+    <label for="player">Paper</label><br/>
+    <input type="radio" name="choice" id="scissors" value="scissors"  />
+    <label for="player">Scissors</label><br/>
+    <input type="submit" value="Add choice">
+</form>
+
+{% endblock %}
