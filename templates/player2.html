@@ -1,19 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <h1>Game</h1>
-    <h2>Player 2</h2>
-
+<div id="player">
+    <h2>Let's play!</h1>
+    <div id="icon_and_header">
+    <i class="fa fa-user fa-2x"></i>
+    <h3>Player 2</h3>
+    </div>
     <form action="/game" method="post">
         <label for="name">Name</label><br>
         <input type="text" name="name" id="name">
-        <legend>Select Your Choice: </legend>
+        <div class="wrapper-class">
+        <legend>Select Your Choice: </legend><br/>
         <input type="checkbox" name="choice" id="rock" value="rock" />
-        <label for="player">Rock</label><br />
+        <label for="player">Rock</label><br/>
         <input type="checkbox" name="choice" id="paper" value="paper"  />
         <label for="player">Paper</label><br/>
         <input type="checkbox" name="choice" id="scissors" value="scissors"  />
         <label for="player">Scissors</label><br/>
+        </div>
         <input type="submit" value="Add choice">
     </form>
 

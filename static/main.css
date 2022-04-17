@@ -1,7 +1,29 @@
 body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0px;
     
   }
 
-body>h1 {
-    background-color: #92BCEA;
+#header-background {
+  /* background-image: url('https://miro.medium.com/max/1400/1*FAIuem8M9trReHQRAORDng.png'); */
+  background-color: gold;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left:48px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 24px;
 }
+
+#header_text {
+  display: flex;
+  flex-direction: column;
+}
+
+#header_text>p {
+  color:rgb(0, 0, 0)
+}
+
