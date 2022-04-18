@@ -7,15 +7,15 @@
     <h3>Player 2</h3>
     </div>
     <form action="/game" method="post">
-        <label for="name">Name</label><br>
+        <label for="name">Name</label><br/>
         <input type="text" name="name" id="name">
         <div class="wrapper-class">
-        <legend>Select Your Choice: </legend><br/>
-        <input type="checkbox" name="choice" id="rock" value="rock" />
+        <legend>You choose: </legend><br>
+        <input type="radio" name="choice" id="rock" value="rock" />
         <label for="player">Rock</label><br/>
-        <input type="checkbox" name="choice" id="paper" value="paper"  />
+        <input type="radio" name="choice" id="paper" value="paper"  />
         <label for="player">Paper</label><br/>
-        <input type="checkbox" name="choice" id="scissors" value="scissors"  />
+        <input type="radio" name="choice" id="scissors" value="scissors"  />
         <label for="player">Scissors</label><br/>
         </div>
         <input type="submit" value="Add choice">

@@ -10,15 +10,24 @@
         <form action="/player2" method="post">
             <label for="name">Name</label><br>
             <input type="text" name="name" id="name">
-            <div class="wrapper-class">
-                <legend>Select Your Choice: </legend>
+            <legend>You choose: </legend><br>
+            <div id="radio-button">
+            <div id="rock">
+                <img src="{{ url_for('images', filename='icon_rock.png') }}" alt="rock_icon">
                 <input type="radio" name="choice" id="rock" value="rock" />
-                <label for="player">Rock</label><br />
-                <input type="radio" name="choice" id="paper" value="paper"  />
-                <label for="player">Paper</label><br/>
-                <input type="radio" name="choice" id="scissors" value="scissors"  />
-                <label for="player">Scissors</label><br/>
+                <label for="player">Rock</label>
             </div>
+            <div id="paper">
+                <img src="../images/icon_rock.png" alt="paper_icon">
+                <input type="radio" name="choice" id="paper" value="paper"  />
+                <label for="player">Paper</label>
+            </div>
+            <div id="scissors">
+                <img src="../images/icon_rock.png"alt="scissors_icon">
+                <input type="radio" name="choice" id="scissors" value="scissors"  />
+                <label for="player">Scissors</label>
+            </div>
+        </div><br/>
             <input type="submit" value="Add choice">
         </form>
     </div>
